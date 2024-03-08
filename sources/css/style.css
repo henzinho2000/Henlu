@@ -1,0 +1,338 @@
+
+/*  UNIVERSAIS  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin-top: 80px;
+    background-color: rgb(255, 227, 227);
+}
+footer{
+    background-color: rgb(138, 70, 255);
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    padding-top: 5vw;
+    margin-top: 3vw;
+    font-size: 1.15vw;
+}
+
+/*  SCROLL  */
+::-webkit-scrollbar {
+    width: .75rem;
+    background-color: rgb(138, 70, 255);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 101, 50) ;
+    border-radius: 25px;
+}
+
+/*  FIXADA  */
+.header{
+    background-color: rgb(138, 70, 255); 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: -80px;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 20px;
+    animation: 1s header;
+    z-index: 1;
+}
+
+/*  esquerda  */
+.primeiroA{
+    display: flex;
+    align-items: center;
+}
+.primeiroA a{
+    margin-left: 2.5vw;
+    transition: all 0.25s;
+}
+.primeiroA a:hover{
+    transform: scale(1.1);
+}
+.primeiroA img{
+    scale: 0.7;
+}
+
+/*  direita  */
+.segundoA svg{
+    margin-right: 10px;
+    scale: 1.1; 
+    transition: all 0.25s;
+}
+.segundoA svg:hover{
+    transform: scale(1.2);
+}
+.segundoA a{
+    margin-right: 2vw;
+}
+
+/*  animation  */
+@keyframes header{
+    0%{
+        opacity:0;
+        margin-top: -90px;
+    }
+    100%{
+        opacity:1;
+        margin-top: -80px;
+    }
+}
+
+
+/*  CONTAINER 1  */
+.container1{
+    display: flex;
+    height: 120vh;
+    align-items: center;
+}
+
+/*  image  */
+.image1 img{
+    width: 60vw;
+    height: 40vw;
+    position: absolute;
+    margin: -25vw -15vw;
+    z-index: -9;
+}
+
+/*  texto  */
+.texto{
+    height: 40vh;
+    width: 35vw;
+    color: white;
+    background-color: rgb(255, 121, 73);
+    margin-top: -20vh;
+    display: flex;
+    flex-direction: column;
+}
+.texto h1{
+    color: rgb(138, 70, 255);
+    font-size: 8vw;
+    margin: 7vh 5vw;
+}
+.texto h2{
+    margin: -5vh 1vw;
+    width: 40vw;
+    font-size: 1.5vw;
+}
+
+/*  background  */
+.back1{
+    width: 48.96vw;
+    height: 60vw;
+    margin-top: -55vw;
+    margin-left: 50vw;
+    background-color: rgb(138, 70, 255);
+    position: absolute;
+    z-index: -10;
+}
+
+/*  CONTAINER 2  */
+.container2{
+    margin-top: -18vh;
+}
+.container2 h1{
+    color: rgb(138, 70, 255);
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+/*  destaque  */
+.destaque{
+    margin-left: 7vw;
+}
+.border{
+    background-color: rgb(255, 121, 73);
+    width: 10vw;
+    height: 1vh;
+}
+
+/*  produtos  */
+.produtos-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    margin-left: 7vw;
+    width: 85vw;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 121, 73);
+    border-radius: 20px;
+    width: 20vw;
+    height: 35vw;
+    transition: all 0.5s;
+    z-index: 0;
+}
+.produtos:hover{
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+    transform: scale(1.01);
+    z-index: 0;
+}
+.produtos img{
+    width: 20vw;
+    border-radius: 20px;
+}
+.produtos h2{
+    width: 15vw;
+    height: 17vh;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 1.5vw;
+}
+.produtos p{
+    font-size: 1vw;
+    width: 4vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    padding-top: 10px;
+    border-top: 3px solid black;
+    color: rgb(50, 16, 70);
+    font-weight: 900;
+}
+
+/*  CONHEÇA-NOS  */
+.container3{
+    margin-top: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+}
+
+/*  características  */
+.conheça{
+    display: flex;
+}
+.conheça h1{    
+    color: white;
+    font-size: 5vw;
+    margin-left: 5vw;
+}
+.conheça p{
+    color: white;
+    font-size: 1.5vw;
+    text-align: justify;
+    width: 35vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+.conheça img{
+    width: 50vw;
+}
+
+/*  traço em baixo do H1*/
+.border2{
+    background-color: rgb(255, 121, 73);
+    width: 10vw;
+    height: 1vw;
+    margin-left: 5.1vw;
+}
+
+/*  cores de fundo  */
+.back2{
+    width: 68vw;
+    height: 37vw;
+    margin-top: -5vw;
+    margin-left: 30vw;
+    background-color: rgb(138, 70, 255);
+    position: absolute;
+    z-index: -1;
+}
+.back3{
+    width: 60vw;
+    height: 35vw;
+    margin-top: -10vw;
+    margin-left: 5vw;
+    background-color: rgb(255, 121, 73);
+    position: absolute;
+    z-index: -2;
+}
+
+/*  BLOG  */
+.container4 h1{
+    margin-top: 6vw;
+    margin-left: 6vw;
+    font-size: 3.5vw;
+    color: black;
+}
+
+.border3{
+    width: 27vw;
+    height: 1vw;
+    background-color: rgb(255, 101, 50);
+}
+
+/*  estrutura dos artigos  */
+.artigos{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+/*  artigos em si  */
+.artigos2{
+    width: 25vw;
+    height: 36vw;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background: rgb(255, 101, 50);
+    transition: all .5s;
+}
+.artigos2:hover{
+    transform: scale(1.01);
+     cursor: pointer;
+}
+.artigos2 h2{
+    color: white;
+    width: 20vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+/*  FOOTER  */
+.redes img{
+    width: 2vw;
+}
+.redes{
+    display: flex;
+    margin-top: 1vw;
+    align-items:center;
+}
+.redes p{
+    margin-left: .5vw;
+}
+
+/*  google maps  */
+.google{
+    background-color: black;
+    color: white;
+    padding: .5vw 10vw;
+    font-size: 1.35vw;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    transition: all .5s;
+    position: absolute;
+    top: 200vw;
+}
+.google:hover{
+    background-color: rgb(29, 29, 29);
+    border-radius: 0;
+}

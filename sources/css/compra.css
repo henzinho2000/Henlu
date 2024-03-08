@@ -1,0 +1,186 @@
+
+/*  UNIVERSAIS  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin-top: 80px;
+    background-color: rgb(255, 227, 227);
+}
+footer{
+    background-color: rgb(138, 70, 255);
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    padding-top: 5vw;
+    margin-top: 3vw;
+    font-size: 1.15vw;
+}
+
+/*  SCROLL  */
+::-webkit-scrollbar {
+    width: .75rem;
+    background-color: rgb(138, 70, 255);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 101, 50) ;
+    border-radius: 25px;
+}
+
+
+/*  FIXADA  */
+.header{
+    background-color: rgb(138, 70, 255); 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: -160px;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 20px;
+    animation: 1s header;
+    z-index: 1;
+}
+
+/*  esquerda  */
+.primeiroA{
+    display: flex;
+    align-items: center;
+}
+.primeiroA a{
+    margin-left: 2.5vw;
+    transition: all 0.25s;
+}
+.primeiroA a:hover{
+    transform: scale(1.1);
+}
+.primeiroA img{
+    scale: 0.7;
+}
+
+/*  direita  */
+.segundoA svg{
+    margin-right: 10px;
+    scale: 1.1; 
+    transition: all 0.25s;
+}
+.segundoA svg:hover{
+    transform: scale(1.2);
+}
+.segundoA a{
+    margin-right: 2vw;
+}
+
+/*  animation  */
+@keyframes header{
+    0%{
+        opacity:0;
+        margin-top: -170px;
+    }
+    100%{
+        opacity:1;
+        margin-top: -160px;
+    }
+}
+
+/*  FOOTER  */
+.redes img{
+    width: 2vw;
+}
+.redes{
+    display: flex;
+    margin-top: 1vw;
+    align-items:center;
+}
+.redes p{
+    margin-left: .5vw;
+}
+
+.google{
+    background-color: black;
+    color: white;
+    padding: .5vw 10vw;
+    font-size: 1.35vw;
+    position: absolute;
+    top: 64vw;
+    border-radius: 2vw;
+    transition: all .5s;
+}
+.google:hover{
+    background-color: rgb(29, 29, 29);
+    border-radius: 0;
+}
+
+/*  COMPRAS  */
+.back{
+    width: 15vw;
+    height: .7vw;
+    background-color: rgb(138, 70, 255);
+    margin: 1vw -7.25vw;
+}
+
+.compra{
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 10vw;
+    color: rgb(47, 47, 47);
+    text-align: justify;
+}
+.compra h1{
+    color: white;
+}
+.compra p{
+    font-size: 1.25vw;
+    margin: 3vw 0;
+
+}
+
+.preço{
+    margin: 1vw 0;
+    color: white;
+}
+
+.images img{
+    width: 35vw;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin-left: 10vw;
+    background-color: rgb(255, 121, 73);
+}
+
+.container{
+    width: 25.5vw;
+    margin-top: 5vw;
+}
+.container a{
+    background-color: rgb(133, 62, 255);
+    color: white;
+    border-radius: 3vw;
+    padding: 1vw 10.3vw;
+    font-size: 1.2vw;
+    transition: all .5s;
+}
+.container a:hover{
+    border-radius: 0;
+    background-color: rgb(153, 96, 252);
+}
+
+span{
+    font-size: 1vw;
+    color: rgb(237, 237, 237);
+}

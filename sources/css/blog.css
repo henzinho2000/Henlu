@@ -1,0 +1,160 @@
+/*  UNIVERSAIS  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin-top: 80px;
+    background-color: rgb(255, 227, 227);
+}
+footer{
+    background-color: rgb(138, 70, 255);
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    padding-top: 5vw;
+    margin-top: 3vw;
+    font-size: 1.15vw;
+}
+
+/*  SCROLL  */
+::-webkit-scrollbar {
+    width: .75rem;
+    background-color: rgb(138, 70, 255);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 101, 50) ;
+    border-radius: 25px;
+}
+
+
+/*  FIXADA  */
+.header{
+    background-color: rgb(138, 70, 255); 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: -160px;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 20px;
+    animation: 1s header;
+    z-index: 1;
+}
+
+/*  esquerda  */
+.primeiroA{
+    display: flex;
+    align-items: center;
+}
+.primeiroA a{
+    margin-left: 2.5vw;
+    transition: all 0.25s;
+}
+.primeiroA a:hover{
+    transform: scale(1.1);
+}
+.primeiroA img{
+    scale: 0.7;
+}
+
+/*  direita  */
+.segundoA svg{
+    margin-right: 10px;
+    scale: 1.1; 
+    transition: all 0.25s;
+}
+.segundoA svg:hover{
+    transform: scale(1.2);
+}
+.segundoA a{
+    margin-right: 2vw;
+}
+
+/*  animation  */
+@keyframes header{
+    0%{
+        opacity:0;
+        margin-top: -170px;
+    }
+    100%{
+        opacity:1;
+        margin-top: -160px;
+    }
+}
+
+/*  FOOTER  */
+.redes img{
+    width: 2vw;
+}
+.redes{
+    display: flex;
+    margin-top: 1vw;
+    align-items:center;
+}
+.redes p{
+    margin-left: .5vw;
+}
+
+/*  google maps  */
+.google{
+    background-color: black;
+    color: white;
+    padding: .5vw 10vw;
+    font-size: 1.35vw;
+    position: absolute;
+    top: 78vw;
+    border-radius: 2vw;
+    transition: all .5s;
+}
+.google:hover{
+    background-color: rgb(29, 29, 29);
+    border-radius: 0;
+}
+
+/*  BLOG  */
+.blog{
+    margin-left: 5vw;
+    margin-top: 10vw;
+}
+.blog p{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    width: 85vw;
+    align-items: justify;
+}
+
+/*  título  */
+.titulo{
+    display: flex;
+    width: 80vw;
+    font-size: 2vw;
+    text-align: justify;
+    align-items: center;
+}
+.titulo img{
+    width: 30vw;
+}
+
+.titulo h1{
+    margin-left: 5vw;
+    width: 50vw;
+}
+
+/*  h1  */
+.back{
+    margin-left: 5vw;
+    width: 10vw;
+    height: 1vw;
+    background-color: rgb(255, 101, 50);
+}
